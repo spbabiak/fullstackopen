@@ -4,7 +4,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: Form submit trigered, the event handler creates a new note, adds it to the notes list, renders the notes list on the page and data sent as JSON string
+    Note right of browser: The form submission triggered the event handler. It created a new note, added it to the notes list, rendered the notes on the page, and sent the data as a JSON string.
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
